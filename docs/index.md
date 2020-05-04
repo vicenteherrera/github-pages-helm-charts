@@ -60,13 +60,13 @@ Visit:
 * [vicenteherrera.github.io/my-falco-chart](https://vicenteherrera.github.io/my-falco-chart)
 
 You should see the content from:
-* [github.com/vicenteherrera/my-falco-chart/docs/index.md](https://github.com/vicenteherrera/my-falco-chart/docs/index.md)
+* [github.com/vicenteherrera/my-falco-chart/blob/master/docs/index.md](https://github.com/vicenteherrera/my-falco-chart/blob/master/docs/index.md)
 
 If you visit:
 * [vicenteherrera.github.io/my-falco-chart/charts/index.yaml](https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml)
 
 You should see the contents of _index.yaml_ file:
-* [github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml](https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml)
+* [github.com/vicenteherrera/my-falco-chart/blob/master/docs/charts/index.yaml](https://github.com/vicenteherrera/my-falco-chart/blob/master/docs/charts/index.yaml)
 
 You can add this repository to deploy charts from it
 

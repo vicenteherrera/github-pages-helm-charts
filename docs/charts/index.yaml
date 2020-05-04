@@ -3,7 +3,7 @@ entries:
   falco:
   - apiVersion: v1
     appVersion: 0.21.0
-    created: "2020-05-04T18:52:50.900172+02:00"
+    created: "2020-05-04T18:58:08.655725+02:00"
     description: Falco
     digest: c7f5c516965f28a0c09540e29bb27f6d41c0d6d5f9d1301eec6a63dedbdfad82
     home: https://falco.org
@@ -22,6 +22,6 @@ entries:
     sources:
     - https://github.com/falcosecurity/falco
     urls:
-    - https://vicenteherrera.github.io/my-falco-repo/charts/falco-1.1.6.tgz
+    - https://vicenteherrera.github.io/my-falco-chart/charts/falco-1.1.6.tgz
     version: 1.1.6
-generated: "2020-05-04T18:52:50.895903+02:00"
+generated: "2020-05-04T18:58:08.648648+02:00"

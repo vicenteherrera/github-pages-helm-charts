@@ -17,10 +17,10 @@ The last option is best for keeping some content accesible from the main reposit
 ## URL and domain
 
 The URL will be in the form of:
-* \<github_username\>.github.io/\<repo_name\>
+* **\<github_username\>.github.io/\<repo_name\>**
 
-If your repository name is <github_username>.github.io, the URL will be:
-* \<github_username\>.github.io
+If your repository name is _\<github_username\>.github.io_, the URL will be:
+* **\<github_username\>.github.io**
 
 On repository settings you can:
 
@@ -43,7 +43,9 @@ Inside that folder we will place charts and a index.yaml file to address them, a
 
 ```
 helm package falco
+
 mv falco-1.1.6.tgz docs/charts
+
 helm repo index docs/charts --url https://<github_username>.github.io/<repo_name>/charts
 ```
 
@@ -55,29 +57,31 @@ helm repo index docs/charts --url https://vicenteherrera.github.io/my-falco-char
 ## How to test
 
 Visit:
-* [https://vicenteherrera.github.io/my-falco-chart](https://vicenteherrera.github.io/my-falco-chart)
+* [vicenteherrera.github.io/my-falco-chart](https://vicenteherrera.github.io/my-falco-chart)
 
 You should see the content from:
-* [https://github.com/vicenteherrera/my-falco-chart/docs/index.md](https://github.com/vicenteherrera/my-falco-chart/docs/index.md)
+* [github.com/vicenteherrera/my-falco-chart/docs/index.md](https://github.com/vicenteherrera/my-falco-chart/docs/index.md)
 
 If you visit:
-* [https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml](https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml)
+* [vicenteherrera.github.io/my-falco-chart/charts/index.yaml](https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml)
 
 You should see the contents of _index.yaml_ file:
-* [https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml](https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml)
+* [github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml](https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml)
 
 You can add this repository to deploy charts from it
 
 ```
 helm repo add my-repo https://vicenteherrera.github.io/my-falco-chart/charts
+
 helm repo update
+
 helm search repo my-repo
 ```
 
 ## References
 
 References:
-* [https://helm.sh/docs/topics/chart_repository](Helm chart on GitHub pages)
-* [https://pages.github.com](GitHub pages)
-* [https://github.com/int128/helm-github-pages](CircleCI to generate Helm chart on GitHub pages)
-* [https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4](GitHub action to generate Helm chart on GitHub Pages)
+* [Helm chart on GitHub pages](https://helm.sh/docs/topics/chart_repository)
+* [GitHub pages](https://pages.github.com)
+* [CircleCI to generate Helm chart on GitHub pages](https://github.com/int128/helm-github-pages)
+* [GitHub action to generate Helm chart on GitHub Pages](https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4)

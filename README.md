@@ -42,7 +42,34 @@ Inside that folder we will place charts and a index.yaml file to address them, a
 ```
 helm package falco
 mv falco-1.1.6.tgz docs/charts
-helm repo index docs/charts --url https://<github_username>.github.io/charts
+helm repo index docs/charts --url https://<github_username>.github.io/<repo_name>/charts
+```
+
+To use in this repo:
+```
+helm repo index docs/charts --url https://vicenteherrera.github.io/my-falco-chart/charts
+```
+
+## How to test
+
+Visit:
+* https://vicenteherrera.github.io/my-falco-chart
+
+You should see the content from:
+* [docs/index.md](./docs/index.md)
+
+If you visit:
+* https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml
+
+You should see the _index.yaml_ file in
+* [docs/charts/index.yaml](./docs/charts/index.yaml)
+
+You can add this repository to deploy charts from it
+
+```
+helm repo add my-repo https://vicenteherrera.github.io/my-falco-chart/charts
+helm repo update
+helm search repo my-repo
 ```
 
 ## References
@@ -50,3 +77,5 @@ helm repo index docs/charts --url https://<github_username>.github.io/charts
 References:
 * https://helm.sh/docs/topics/chart_repository/
 * https://pages.github.com/
+* https://github.com/int128/helm-github-pages
+* https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4

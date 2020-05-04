@@ -83,5 +83,7 @@ helm search repo my-repo
 References:
 * [Helm chart on GitHub pages](https://helm.sh/docs/topics/chart_repository)
 * [GitHub pages](https://pages.github.com)
+* [Jekyll themes for GitHub pages](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser)
+* [Customizing Cayman Jekyll theme](https://github.com/pages-themes/cayman)
 * [CircleCI to generate Helm chart on GitHub pages](https://github.com/int128/helm-github-pages)
 * [GitHub action to generate Helm chart on GitHub Pages](https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4)

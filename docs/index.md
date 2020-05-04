@@ -10,28 +10,30 @@ You have three options:
 
 * Expose your main **master** branch
 * Expose another designated branch
-* Expose content from a **docs** directory on your repository (you can't choose another different directory)
+* Expose content from a **docs** directory on your repository (you can't choose a different directory name or path)
 
 The last option is best for keeping some content accesible from the main repository URL, and at the same time make clear where additional files are.
 
 ## URL and domain
 
 The URL will be in the form of:
-* <github_username>.github.io/<repo_name>
+* \<github_username\>.github.io/\<repo_name\>
 
 If your repository name is <github_username>.github.io, the URL will be:
-* <github_username>.github.io/<repo_name>
+* \<github_username\>.github.io
 
-HTTPS can be enforced for those URLs with a certificate issued by github.com
+On repository settings you can:
 
-You can also use your own custom domain.
+* Enforce HTTPS the public URLs with a certificate issued by github.com
+* Add your own custom domain
+* Choose a template for pages generated from markdown to HTML and CSS by Jekyll
 
 ## Website content
 
 You can use your own HTML and CSS files, or markdown files using on the templates.
 
 If you want to use markdown, the default file that will be shown on each directory has to be named **index.md**
-On the repository settings you can choose the Jekill theme that will be used for automatically converting markdown to HTML and CSS.
+
 You can also choose an image that will be used when sharing the site in social media posts.
 
 ## Chart structure
@@ -53,16 +55,16 @@ helm repo index docs/charts --url https://vicenteherrera.github.io/my-falco-char
 ## How to test
 
 Visit:
-* https://vicenteherrera.github.io/my-falco-chart
+* [https://vicenteherrera.github.io/my-falco-chart](https://vicenteherrera.github.io/my-falco-chart)
 
 You should see the content from:
-* [docs/index.md](./docs/index.md)
+* [https://github.com/vicenteherrera/my-falco-chart/docs/index.md](https://github.com/vicenteherrera/my-falco-chart/docs/index.md)
 
 If you visit:
-* https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml
+* [https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml](https://vicenteherrera.github.io/my-falco-chart/charts/index.yaml)
 
-You should see the _index.yaml_ file in
-* [docs/charts/index.yaml](./docs/charts/index.yaml)
+You should see the contents of _index.yaml_ file:
+* [https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml](https://github.com/vicenteherrera/my-falco-chart/docs/charts/index.yaml)
 
 You can add this repository to deploy charts from it
 
@@ -75,7 +77,7 @@ helm search repo my-repo
 ## References
 
 References:
-* https://helm.sh/docs/topics/chart_repository/
-* https://pages.github.com/
-* https://github.com/int128/helm-github-pages
-* https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4
+* [https://helm.sh/docs/topics/chart_repository](Helm chart on GitHub pages)
+* [https://pages.github.com](GitHub pages)
+* [https://github.com/int128/helm-github-pages](CircleCI to generate Helm chart on GitHub pages)
+* [https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4](GitHub action to generate Helm chart on GitHub Pages)

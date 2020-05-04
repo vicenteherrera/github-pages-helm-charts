@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Publish a Helm Chart using GitHub pages
 
-You can use the [editor on GitHub](https://github.com/vicenteherrera/my-falco-chart/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Publish a website using GitHub pages
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There are three options to publish a website using GitHub pages:
 
-### Markdown
+Using GitHub pages, you publish a Jekill generated web page from the markdown files on your repository.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You have three options:
 
-```markdown
-Syntax highlighted code block
+* Expose your main **master** branch
+* Expose another designated branch
+* Expose content from a **docs** folder on your repository (you can't choose another different folder)
 
-# Header 1
-## Header 2
-### Header 3
+The last option is best for keeping some content accesible from the main repository URL, and at the same time make clear where additional files are.
 
-- Bulleted
-- List
+## URL and domain
 
-1. Numbered
-2. List
+The URL will be in the form of:
+* <github_username>.github.io/<repo_name>
 
-**Bold** and _Italic_ and `Code` text
+If your repository name is <github_username>.github.io, the URL will be:
+* <github_username>.github.io/<repo_name>
 
-[Link](url) and ![Image](src)
-```
+HTTPS can be enforced for those URLs with a certificate issued by github.com
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vicenteherrera/my-falco-chart/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can also use your own custom domain.

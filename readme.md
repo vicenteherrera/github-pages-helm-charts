@@ -1,5 +1,7 @@
 # Publish a Helm chart using GitHub pages
 
+(test all in root)
+
 ## Publish a website using GitHub pages
 
 There are three options to publish a website using GitHub pages:

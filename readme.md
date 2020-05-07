@@ -4,6 +4,9 @@ This is a tutorial about how to publish your **Helm charts repository** using **
 
 It is also a working example that you can test with Helm, or fork to create your own Helm charts repository using GitHub Pages.
 
+If you are viewing this from the GitHub repository information page, check how it is seen as a website at:
+  * [vicenteherrera.github.io/github-pages-helm-charts](https://vicenteherrera.github.io/github-pages-helm-charts)
+
 ## Publish a website using GitHub pages
 
 Using GitHub pages, you publish a Jekyll generated web page from the markdown files on your repository.
@@ -21,10 +24,10 @@ In this exaple we chose the first one, so when we update the root `readme.md`, t
 ## URL and domain
 
 The URL will be in the form of:
-* **\<github_username\>.github.io/\<repo_name\>**
+* `<github_username>.github.io/<repo_name>`
 
-If your repository name is _\<github_username\>.github.io_, the URL will be:
-* **\<github_username\>.github.io**
+If your repository name is `<github_username>.github.io`, the URL will not use the repo name, and just be shown as:
+* `<github_username>.github.io`
 
 On repository settings, in adition to set up what to expose to the public web, you can:
 
@@ -55,7 +58,7 @@ We will create a `index.yaml` file to list the charts, as we explain in the foll
 helm package falco
 mv falco-1.1.6.tgz docs/charts
 
-#Update ndex.yml searching all subfolders for possible packaged charts
+#Update index.yml searching all subfolders for possible packaged charts
 helm repo index docs/charts --url https://<github_username>.github.io/<repo_name>
 
 ```
@@ -66,6 +69,18 @@ helm repo index docs/charts --url https://vicenteherrera.github.io/github-pages-
 ```
 
 ## How to install Helm charts from this repo
+
+To add this repository to deploy charts from it:
+
+```bash
+helm repo add my-repo https://vicenteherrera.github.io/github-pages-helm-charts
+
+helm repo update
+
+helm search repo github-pages-helm-charts
+```
+
+## Mappings of folders and files
 
 Visit:
 * [vicenteherrera.github.io/github-pages-helm-charts](https://vicenteherrera.github.io/github-pages-helm-charts)
@@ -79,19 +94,8 @@ If you visit:
 You should see the contents of _index.yaml_ file:
 * [github.com/vicenteherrera/github-pages-helm-charts/blob/master/index.yaml](https://github.com/vicenteherrera/github-pages-helm-charts/blob/master/index.yaml)
 
-To add this repository to deploy charts from it:
-
-```bash
-helm repo add my-repo https://vicenteherrera.github.io/github-pages-helm-charts
-
-helm repo update
-
-helm search repo github-pages-helm-charts
-```
-
 ## References
 
-References:
 * [Helm chart on GitHub pages](https://helm.sh/docs/topics/chart_repository)
 * [GitHub pages](https://pages.github.com)
 * [Jekyll themes for GitHub pages](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser)

@@ -102,3 +102,7 @@ You should see the contents of _index.yaml_ file:
 * [Customizing Cayman Jekyll theme](https://github.com/pages-themes/cayman)
 * [CircleCI to generate Helm chart on GitHub pages](https://github.com/int128/helm-github-pages)
 * [GitHub action to generate Helm chart on GitHub Pages](https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4)
+
+## Credits
+
+Done by [Vicente Herrera](https://twitter.com/vicen_herrera) for [sysdig.com](https://sysdig.com)

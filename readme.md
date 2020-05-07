@@ -11,8 +11,9 @@ If you are viewing this from the GitHub repository information page, check how i
 
 Using GitHub pages, you publish a Jekyll generated web page from the markdown files on your repository.
 
-Going into settings for the repo, you have three options:
+Going into settings for the repo, at the bottom of the first settings page you have three options for what to expose as a public website:
 
+* None (no website, default value)
 * Expose your main **master** branch
 * Expose another designated branch
 * Expose content from a **docs** directory on your repository (you can't choose a different directory name or path)
@@ -20,6 +21,8 @@ Going into settings for the repo, you have three options:
 The last option is best for keeping some content accesible from the main repository URL, and at the same time make clear where additional files are.
 
 In this exaple we chose the first one, so when we update the root `readme.md`, the same file gets exposed to the website and the repository page on GitHub.
+
+Take into consideration that if your repository is private or internal to a team, the website will be enabled publicly, and all the contents from the branch or docs folder can be accessed.
 
 ## URL and domain
 

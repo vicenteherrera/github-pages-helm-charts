@@ -97,6 +97,36 @@ If you visit:
 You should see the contents of _index.yaml_ file:
 * [github.com/vicenteherrera/github-pages-helm-charts/blob/master/index.yaml](https://github.com/vicenteherrera/github-pages-helm-charts/blob/master/index.yaml)
 
+
+## Exporting helms/charts history to a new repository
+
+If you want to export the charts you previously hosted on [github.com/helm/charts](https://github.com/helm/charts) with all their commits history to a new repository, but without any other chart's history in it, follow these steps.
+
+```bash
+# 1. Create a new empty GitHub empty repository, without any commits in it.
+
+# 2. Clone helm/charts repository
+git clone git@github.com:helm/charts.git
+cd charts
+
+# 3. Upload selected folder history to master branch of new repository
+git subtree push --prefix=charts/<your_chart_folder> <destiny_repo_url> master
+```
+
+After this, your chart content and all its history will be available in master branch of the newly created GitHub repository (you can move it to wherever you want).
+
+You will have to download all packaged chart for each version, and move it to the `packages` folder.
+
+```bash
+# List all versions of your chart
+helm search repo stable/<your_chart> --versions
+
+# Download a specific packaged chart version
+helm pull stable/<your_chart> --version <ver_number>
+```
+
+
+
 ## References
 
 * [Helm chart on GitHub pages](https://helm.sh/docs/topics/chart_repository)

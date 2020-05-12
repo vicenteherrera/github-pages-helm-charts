@@ -58,11 +58,12 @@ We will create a `index.yaml` file to list the charts, as we explain in the foll
 ```bash
 # Prepare your packaged chart
 # "falco" package folder not included in this demo
-helm package falco
-mv falco-1.1.6.tgz docs/charts
+cd packages
+helm package ../charts/falco
 
 #Update index.yml searching all first level subfolders for possible packaged charts
-helm repo index docs/charts --url https://<github_username>.github.io/<repo_name>
+cd ..
+helm repo index . --url https://<github_username>.github.io/<repo_name>
 
 ```
 

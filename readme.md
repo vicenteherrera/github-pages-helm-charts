@@ -126,8 +126,6 @@ helm search repo stable/<your_chart> --versions
 helm pull stable/<your_chart> --version <ver_number>
 ```
 
-
-
 ## References
 
 * [Helm chart on GitHub pages](https://helm.sh/docs/topics/chart_repository)
@@ -136,6 +134,8 @@ helm pull stable/<your_chart> --version <ver_number>
 * [Customizing Cayman Jekyll theme](https://github.com/pages-themes/cayman)
 * [CircleCI to generate Helm chart on GitHub pages](https://github.com/int128/helm-github-pages)
 * [GitHub action to generate Helm chart on GitHub Pages](https://medium.com/@stefanprodan/automate-helm-chart-repository-publishing-with-github-actions-and-pages-8a374ce24cf4)
+* [GitHub action from Helm to automate releasing and publishing charts based on Chart Releaser](https://github.com/helm/chart-releaser-action)
+* [Helm tool Chart Releaser](https://github.com/helm/chart-releaser)
 
 ## Credits
 

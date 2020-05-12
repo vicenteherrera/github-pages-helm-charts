@@ -61,14 +61,14 @@ We will create a `index.yaml` file to list the charts, as we explain in the foll
 helm package falco
 mv falco-1.1.6.tgz docs/charts
 
-#Update index.yml searching all subfolders for possible packaged charts
+#Update index.yml searching all first level subfolders for possible packaged charts
 helm repo index docs/charts --url https://<github_username>.github.io/<repo_name>
 
 ```
 
 How we used in this repo:
 ```bash
-helm repo index docs/charts --url https://vicenteherrera.github.io/github-pages-helm-charts
+helm repo index . --url https://vicenteherrera.github.io/github-pages-helm-charts
 ```
 
 ## How to install Helm charts from this repo
